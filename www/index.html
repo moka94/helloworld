@@ -33,14 +33,23 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script src="js/libs/jquery/jquery.min.js" type="text/javascript"></script>
+        <script src="js/libs/jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
+        <link href="js/libs/jquery-mobile/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        
+        <div data-role="page" id="name">
+            <div data-role="header">
+                <h1>Gastly</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <p><img src="img/rettangolo.png" alt=""/></p>
+                <p>Gastly è un Pokémon spettro della prima generazione</p>
+            </div>
+            <div data-role="footer">
+                <h3>&copy; 2017 Moka</h3>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
